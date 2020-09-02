@@ -49,7 +49,7 @@ ls -la
 ```
 
 Notice a wierd folder named '...', follow the path to find the hidden login page.
-To get some credentials, check the robots.txt, i user the python script in this repo to get the login but Hydra will do the job.
+To get some credentials, check the robots.txt, i user a python script to get the login (will be uploaded later) but Hydra will do the job.
 
 ```
 hydra -l enox -P credentials.txt {machine ip} http-post-form "/sUp3r-s3cr3t/authenticate.php:username=^USER^&password=^PASS^:Incorrect password!"
